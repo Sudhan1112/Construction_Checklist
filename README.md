@@ -27,26 +27,42 @@ Built for readability, reusability, and scale.
 
 ---
 
-### 🧱 Project Architecture
+Gotchu, Sudhan 💡—you want that project structure to *pop* and look *aesthetic* af. Here's a **clean, modern** version that's easy on the eyes, structured, and still clear about what each file does:
+
+---
+
+### 🗂️ Project Structure – At a Glance
 
 ```
-📦 construction-checklist
- ┣ 📂 components
- ┃ ┣ ChecklistContainer.jsx – Core logic holder
- ┃ ┣ ParentTask.jsx – Parent activity UI + logic
- ┃ ┣ ChildTask.jsx – Sub-activity input + validation
- ┃ ┣ DropdownSelector.jsx – Unit picker
- ┃ ┣ WeightInput.jsx – Handles % input + rules
- ┃ ┗ SaveButton.jsx – Smart save logic
- ┣ 📂 hooks
- ┃ ┗ useChecklistState.js – Global state & logic manager
- ┣ 📂 utils
- ┃ ┣ calculateWeight.js – Totals up child weights
- ┃ ┗ validateWeight.js – Keeps weight under control
- ┣ 📂 constants
- ┃ ┗ dropdownOptions.js – Unit options (e.g., Piers, Fasteners)
+📦 construction-checklist/
+├── client/
+│   ├── public/
+│   └── src/
+│       ├── assets/                # Static images & icons
+│       ├── components/           # Reusable UI blocks
+│       │   ├── ChecklistContainer.jsx    # Main checklist logic + layout
+│       │   ├── ParentTask.jsx            # UI for parent activities
+│       │   ├── ChildTask.jsx             # Sub-activity row w/ inputs
+│       │   ├── DropdownSelector.jsx      # Unit selector dropdown
+│       │   ├── WeightInput.jsx           # Weight % input field
+│       │   └── SaveButton.jsx            # Save button w/ validation logic
+│       ├── constants/
+│       │   └── dropdownOptions.js        # Construction unit options
+│       ├── hooks/
+│       │   └── useChecklistState.js      # Custom state manager hook
+│       ├── utils/
+│       │   ├── calculateWeight.js        # Sums weights of sub-activities
+│       │   └── validateWeight.js         # Prevents going over 100%
+│       ├── App.jsx                # Main entry component
+│       ├── App.css                # Base styling
+│       ├── index.css              # Tailwind config
+│       └── main.jsx               # App mount point
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── vite.config.js
 ```
-
 ---
 
 ### ⚙️ How It Works
