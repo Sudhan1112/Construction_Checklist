@@ -87,4 +87,5 @@ npm run dev
 
 Launch: [http://localhost:5173](http://localhost:5173)
 
+Deployment link: [product-fusion-assignment](https://product-fusion-assignment.vercel.app)
 ---
