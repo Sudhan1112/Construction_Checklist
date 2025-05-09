@@ -26,11 +26,6 @@ Only lets you save when all rules are followed. Toastify pops up with feedback t
 Built for readability, reusability, and scale.
 
 ---
-
-Gotchu, Sudhan 💡—you want that project structure to *pop* and look *aesthetic* af. Here's a **clean, modern** version that's easy on the eyes, structured, and still clear about what each file does:
-
----
-
 ### 🗂️ Project Structure – At a Glance
 
 ```
